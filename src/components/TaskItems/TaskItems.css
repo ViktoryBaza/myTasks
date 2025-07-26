@@ -1,0 +1,9 @@
+.todo__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+    margin: 20px 10px;
+}

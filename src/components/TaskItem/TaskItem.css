@@ -1,0 +1,99 @@
+.todo__item {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px 0;
+    width: 100%;
+
+    max-width: 600px;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgb(235, 106, 106);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+@media (max-width: 700px) {
+    .todo__item {
+        max-width: 80vw; 
+        padding: 20px 15px; 
+    }
+}
+
+@media (max-width: 400px) {
+    .todo__item {
+        max-width: 85vw; 
+        padding: 15px 10px;
+    }
+}
+
+.todo__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(109, 231, 155, 0.906);
+}
+
+.todo__item h3 {
+    font-size: 25px;
+    margin: 0 0 10px;
+    color: #f5f5f5;
+}
+
+.todo__item p {
+    font-size: 20px;
+    margin: 0 0 15px;
+    color: #ccc;
+}
+
+.todo__item label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.todo__item select {
+    width: 100%;
+    max-width: 200px;
+    padding: 6px 10px;
+    font-size: 15px;
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 6px;
+    margin-top: 5px;
+    outline: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 10px;
+    margin-left: 20px;
+}
+.todo__item select:focus {
+    border-color: #888;
+}
+
+.todo__item option {
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+.delete {
+    color: #ff5e5e;
+    border: 1px solid #ff5e5e;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    padding: 7px 12px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.delete:hover {
+    background-color: #ff5e5e;
+    color: white;
+}
+.todo__item h3,
+.todo__item p {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
